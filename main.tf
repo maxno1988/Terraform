@@ -28,6 +28,7 @@ resource "aws_instance" "EC2" {
   subnet_id     = each.value
 
   tags = {
-    Name = "terraform-example"
+    Name  = "terraform-example"
+    Owner = "Altynbek Malibayev" 
   }
 }
